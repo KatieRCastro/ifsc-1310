@@ -8,7 +8,20 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  
+  /*----------------utility classes---------------*/
+
+.container{
+  max-width:960px;
+  width:80vw;
+  margin-top:40px auto;
+}
+
+
+/*----------------responsive images---------------*/
+  img{
+    max-width:100%;
+  }
+
   /* ---------------Global Style----------------- */
 
   body{
@@ -79,5 +92,41 @@ html {
 
   header.primary ul li a:hover, header.primary ul li a:active{
     background-color:rgba(0,0,0,.8);
+  }
+  #intro h2{
+    backround-color:#A6662E;
+    border-bottom:1px dotted #221726;
+  }
+  
+  #content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+  }
 
+  #content article.post{
+    width:30%;
+    box-shadow:0 4px 8px rgba(0,0,0,.3);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+  }
+  #content article.post:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,.3);
+  }
+
+  /*------------- Media Queries---------------*/
+
+  @media screen and (max-width:650px){
+
+    header.primary nav ul{
+      flex-direction:column;
+    }
+    header.primary nav a{
+    display:block;  
+    }
+    header.primary nav li{
+      margin-bottom:10px;
+    }
   }
