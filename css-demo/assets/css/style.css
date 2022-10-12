@@ -94,10 +94,10 @@ html {
     background-color:rgba(0,0,0,.8);
   }
   #intro h2{
-    backround-color:#A6662E;
+    background-color:#A6662E;
     border-bottom:1px dotted #221726;
   }
-  
+
   #content{
     display:flex;
     flex-direction:row;
