@@ -60,7 +60,7 @@ html {
   header.primary h2{
     font-size:1.6rem;
     /* Top | Left/Right | Bottom */
-    margin: 0px auto 40px;
+    margin: 0 auto 40px;
   }
   
   header.primary nav{
@@ -127,7 +127,7 @@ html {
     header.primary ul li a{
     display:block;  
     }
-    
+
     header.primary nav li{
       margin-bottom:10px;
     }
