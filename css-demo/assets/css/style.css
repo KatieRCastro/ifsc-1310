@@ -196,12 +196,49 @@ padding:10px;
 color:#ffffff;
 }
 td{ border:2px solid #221726;
-padding:5px
+padding:5px;
+text-align:right;
+}
+td:first-of-type{
+text-align:left;
 }
 
+#demo ol{
+  list-style-type:upper-alpha;
+}
+#demo ul{
+  list-style-type:square;
+}
+#demo ul ul{
+  list-style-type:circle;
+}
+#demo dl{
 
+}
+#demo dt{
+  font-weight:bold;
+}
+#demo dd{
+  margin:0;
+}
 
+/*--------adjacent-sibling-combinator---------*/
 
+dd+dt {
+margin-top:20px;
+}
+
+#demo blockquote{
+  background-color:rgb(34,23,38,.5) ;
+  padding:40px;
+  border:5px double rgb(34,23,38,.66);
+  border-radius:5px;
+}
+#demo cite{
+  display:block;
+  font-size:.7rem;
+  font-weight:bold;
+}
 /*----------Attribute Selector---------------*/
 aside[role="complementary"]{
 background-color:#241D26;
