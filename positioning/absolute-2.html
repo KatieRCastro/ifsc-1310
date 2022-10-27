@@ -17,6 +17,7 @@ body {
 	line-height: 24px;
 }
 #wrapper {
+	position:relative;
 	background-color: #FFF;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -27,23 +28,53 @@ body {
 	border-bottom-style: solid;
 	border-left-style: solid;
 	width: 800px;
+	height: 800px;
 	margin-right: auto;
 	margin-left: auto;
 }
 #red {
 	background-color: #900;
+	width:200px;
+	height:150px;
+	position:absolute;
+	top:0px;
+	left:0px;
 }
 #green {
 	background-color: #090;
+	width:200px;
+	height:150px;
+	position:absolute;
+	top:0px;
+	right:0px;
 }
 #blue {
 	background-color: #00F;
+	width:200px;
+	height:150px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
 }
+
 #purple {
 	background-color: #63C;
+	width:200px;
+	height:150px;
+	position:absolute;
+	bottom:0px;
+	right:0px;
 }
 #footer {
 	background-color: #666;
+	width:200px;
+	height:150px;
+	position:absolute;
+	bottom:340px;
+	right:300px;
+	
+
+	
 }
 h1 {
 	color: #000;
@@ -54,7 +85,7 @@ h1 {
 </head>
 
 <body>
-<h1>Exercise 1</h1>
+<h1>Absolute Positioning 2</h1>
 <div id="wrapper">
   <div id="red">Red</div>
   <div id="green">Green</div>
