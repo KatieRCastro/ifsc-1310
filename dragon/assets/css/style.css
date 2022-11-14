@@ -12,7 +12,7 @@ html {
 
 .container{
 max-width: 960px;
-width: 80vw;
+width: 800vw;
 margin: 40px auto;
 }
 
@@ -45,19 +45,16 @@ img {
 }
 
 /* ---------------Global Style----------------- */
-  *{
-    margin:0;
-    padding:0;
-  }
+
 
   body{
     font-family: 'EB Garamond', serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.5rem;
     background-color: #ffffff;
     color: #000000;
     font-size: 17px;
+    margin: 0;
+    padding: 0;
    }
 
    header.primary{
@@ -152,12 +149,14 @@ img {
   /*--Dragon Page--*/
   #intro{
 text-align: center;
+
   }
 
 #intro h2{
   margin-bottom: 20px;
   border-top: 1px solid #060E26;
   padding-top: 2.5rem;
+  
 }
 
   #content{
@@ -212,6 +211,10 @@ text-align: left;
     font-size:.7rem;
     text-transform:uppercase;
   }
+  #colophon h6 a{
+    color: #ffffff;
+    text-decoration: none;
+  }
   
   /*--History Page*/
 
@@ -234,3 +237,73 @@ table{
   border-bottom: 1px solid #060E26;
   padding-bottom: 20px;
 }
+/*--End of History page--*/
+
+
+/*--FAQ page--*/
+
+
+#faq-content h2{
+border-bottom: 1px solid #060E26;
+padding-bottom: 20px;
+}
+ #faq-content p:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000000;
+  margin:10px auto;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: bold;
+ }
+ #faq-content p:nth-child(even) {
+  text-align: center;
+ }
+
+ aside{
+  width: 45%;
+  padding: auto;
+  padding-right: 30px;
+  margin: 0;
+  float: left;
+  font-style: italic;
+  color: #000000;
+ border-top: 1px solid#000000;
+ border-left: 1px solid #000000;
+ border-bottom: 1px solid #000000;
+ border-right: 1px solid #000000;
+}
+
+aside header h2{
+  text-align: center;
+  text-decoration: underline;
+}
+aside ul li{
+  list-style-type: none;
+  text-align: left;
+  
+}
+aside ul li a{
+  text-decoration:underline;
+  color: #000000;
+}
+
+ #colophon4{ 
+  background-color:#060E26;
+  color:#ffffff;
+  clear: both;
+}
+
+#colophon4 h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  font-size:.7rem;
+  text-transform:uppercase;
+}
+
+#colophon4 h6 a{
+  color: #ffffff;
+  text-decoration: none;
+}
+ 
