@@ -73,7 +73,7 @@ img {
 
    header.primary::before{
     content: "";
-    background-image: url(../img/Dragon_2_hover_test.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -111,6 +111,7 @@ img {
    header.primary h2{
     position: relative;
     margin: 150px auto 20px auto;
+    display: block;
    }
    
    header.primary nav{
@@ -147,28 +148,38 @@ img {
 
 
   /*--Dragon Page--*/
-  #intro{
-text-align: center;
 
+  #intro.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    align-items: center;
+  }
+  
+  h2 #dragon{
+    padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #060E26;
+      width: 100vw;
+      color: #ffffff;
   }
 
-#intro h2{
-  margin-bottom: 20px;
-  border-top: 1px solid #060E26;
-  padding-top: 2.5rem;
-  
-}
-
   #content{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    border-bottom:1px solid #060E26;
-    padding-bottom:2.8rem;
-    border-top:1px solid #060E26;
-    padding-top:2.8rem;
+    border-bottom: 1px solid #060E26;
+    padding-bottom: 2.8rem;
+    border-top: 1px solid #060E26;
+    padding-top: 2.8rem;
     color: #000000;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
   }
   
   #content article.post{
@@ -179,6 +190,7 @@ text-align: center;
     font-size:.8rem;
     background-color: #060E26;
     color: #ffffff;
+
   }
 
   #content article.post:hover{
@@ -199,7 +211,13 @@ text-align: center;
   list-style-type: none;
 text-align: left;
 }
+#slideshow{
+  box-shadow:0 8px 16px rgba(0,0,0,.3);
+  width: 100vw;
+}
+
 /*--End of Dragon Page--*/
+
   #colophon{
     background-color:#060E26;
     color:#ffffff;
@@ -218,34 +236,100 @@ text-align: left;
   
   /*--History Page*/
 
-#intro2{
-  border-top: 1px solid #060E26;
-  border-bottom:1px solid #060E26;
-  padding-bottom: 2.5rem;
+  #intro2.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    align-items: center;
+  }
+  
+  h2 #history{
+    padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #060E26;
+      width: 100vw;
+      color: #ffffff;
+  }
+
+div.container{
   text-align: center;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
 }
 
-h2{
-  text-align: center;
-  margin-bottom: 20px;
+div.container h3{
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    color: #ffffff;
+    width: 100%;
+    
 }
 table{
-  width: 100%;
-  color:#000000;
-  text-align: center; 
+  color: #000000;
+  text-align: center;
   border-bottom: 1px solid #060E26;
-  padding-bottom: 20px;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-collapse:collapse;
+  width:100%;
 }
+tr:nth-child(even){
+  background-color:rgba(0,0,0,.0);
+  
+}
+
+th{
+  padding:10px;
+  color: #000000;
+  border-bottom:  1px solid #000000;
+}
+td{ border-bottom:1px solid #000000;
+  padding:5px
+}
+
+
 /*--End of History page--*/
 
 
 /*--FAQ page--*/
 
+#faq-content.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
 
-#faq-content h2{
-border-bottom: 1px solid #060E26;
-padding-bottom: 20px;
+h2 #faq{
+  padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    width: 100vw;
+    color: #ffffff; 
+  }
+
+
+#faq-content p{
+  margin: 1rem;
+  
+  
 }
  #faq-content p:nth-child(odd) {
   background-color: #ffffff;
@@ -257,21 +341,19 @@ padding-bottom: 20px;
   font-weight: bold;
  }
  #faq-content p:nth-child(even) {
-  text-align: center;
+  text-align: left;
  }
 
  aside{
-  width: 45%;
+  width: 100%;
   padding: auto;
-  padding-right: 30px;
   margin: 0;
-  float: left;
   font-style: italic;
   color: #000000;
- border-top: 1px solid#000000;
- border-left: 1px solid #000000;
- border-bottom: 1px solid #000000;
- border-right: 1px solid #000000;
+  border-top: 1px solid#000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
 
 aside header h2{
@@ -280,7 +362,8 @@ aside header h2{
 }
 aside ul li{
   list-style-type: none;
-  text-align: left;
+  text-align: center;
+  padding: .3rem;
   
 }
 aside ul li a{
@@ -306,4 +389,46 @@ aside ul li a{
   color: #ffffff;
   text-decoration: none;
 }
- 
+ /*--Contact Page--*/
+
+#contact-content.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  align-items: center;
+}
+
+h2 #contact{
+  padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    width: 100vw;
+    color: #ffffff;
+}
+#form.container{
+  width: 100vw;
+}
+
+
+
+ /*------------- Media Queries---------------*/
+
+ @media screen and (max-width:700px){
+
+  header.primary nav ul{
+    flex-direction:column;
+  }
+
+  header.primary ul li a{
+  display:block;  
+  }
+
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+ }
