@@ -1,0 +1,131 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /*----------------utility classes---------------*/
+  
+  .container{
+  max-width: 960px;
+  width: 800vw;
+  margin: 40px auto;
+  }
+  
+  .img-right{
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 2px double #221726;
+  padding: 5px;
+  border-radius: 4px;  
+  
+  }
+  
+  .img-left{
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 2px double #221726;
+  padding: 5px;
+  border-radius: 4px;  
+  
+  }
+  
+  .img-center{
+  display: block;
+  margin: 20px  auto;
+  }
+  
+  /*----------------responsive images---------------*/
+  img {
+    max-width: 100%;
+  }
+  
+  /* ---------------Global Style----------------- */
+  
+  
+    body{
+      font-family: 'Cookie', cursive;
+      font-family: 'EB Garamond', serif;
+      line-height: 1.5rem;
+      background-color: #ffffff;
+      color:#000000;
+      font-size: 17px;
+      margin: 0;
+      padding: 0;
+     }
+  
+     header.primary{
+      background-color: pink;
+      text-align: center;
+      color: #000000;
+      font-size: 1.3rem;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+  
+     header.primary::before{
+      content: "";
+      background-image: url("../img/bunny.jpeg");
+      background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.6;
+      height: 100vh;
+     }
+  
+      header.primary{
+        position: relative;
+      }
+
+     header.primary h1{
+      position: relative;
+      margin: 150px auto 20px auto;
+      display: block;
+      color: #000000;
+      border: 3px dotted palevioletred;
+      padding: 1rem;
+     }
+     
+     header.primary nav{
+      width:80vw;
+      max-width:900px;
+      margin:20px auto;
+     }
+  
+     header.primary nav ul{
+      position: relative;
+      padding: 0;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-evenly;
+     }
+  
+     header.primary ul li{
+      list-style-type:none;
+     }
+     
+     header.primary  ul li a{
+      color:#000000;
+      text-decoration:none;
+      background-color:rgba(0,0,0,.0);
+      padding:0px 3px;
+      border-radius:3px;
+      transition:.5s;
+      border: 1px solid rgba(0,0,0,.0);
+    }
+  
+    header.primary ul li a:hover, header.primary ul li a:active{
+      background-color:rgba(247, 53, 221, 0.1);
+    }
+  
