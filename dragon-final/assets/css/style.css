@@ -1,0 +1,438 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*----------------utility classes---------------*/
+
+.container{
+  max-width: 960px;
+  width: 800vw;
+  margin: 40px auto;
+}
+
+/*----------------responsive images---------------*/
+img {
+  max-width: 100%;
+}
+
+/* ---------------Global Style----------------- */
+
+
+  body{
+    font-family: 'EB Garamond', serif;
+    line-height: 1.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+   }
+
+   header.primary{
+    background-color: #0E0D26;
+    text-align: center;
+    color: #000000;
+    font-size: 1.3rem;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+
+   header.primary::before{
+    content: "";
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    height: 100vh;
+   }
+
+    header.primary{
+      position: relative;
+
+    }
+
+   header.primary h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    background-image: url(..//img/SpaceX_Logo_Black\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: auto;
+    height: 41px;
+    width: 300px;
+    
+   }
+   header.primary h2{
+    position: relative;
+    margin: 150px auto 20px auto;
+    display: block;
+   }
+   
+   header.primary nav{
+    width:80vw;
+    max-width:900px;
+    margin:20px auto;
+   }
+
+   header.primary nav ul{
+    position: relative;
+    padding: 0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+   }
+
+   header.primary ul li{
+    list-style-type:none;
+   }
+   
+   header.primary  ul li a{
+    color:#000000;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.0);
+    padding:0px 3px;
+    border-radius:3px;
+    transition:.5s;
+    border: 1px solid rgba(0,0,0,.0);
+  }
+
+  header.primary ul li a:hover, header.primary ul li a:active{
+    background-color:rgba(0,0,0,.1);
+  }
+
+
+  /*--Dragon Page--*/
+
+  #intro.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    align-items: center;
+  }
+  
+  h2 #dragon{
+    padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #060E26;
+      width: 100vw;
+      color: #ffffff;
+  }
+
+  #content{
+    border-bottom: 1px solid #060E26;
+    padding-bottom: 2.8rem;
+    border-top: 1px solid #060E26;
+    padding-top: 2.8rem;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+  
+  #content article.post{
+    width:30%;
+    box-shadow:0 4px 8px rgba(0,0,0,.3);
+    padding:10px;
+    border-radius:4px;
+    font-size:.8rem;
+    background-color: #060E26;
+    color: #ffffff;
+
+  }
+
+  #content article.post:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,.3);
+  }
+
+
+.post figure{
+  margin:0;
+}
+
+.post figure img{
+  border: 1px solid #0E0D26;
+  padding:4px;
+  border-radius:4px;
+}
+.post ul{
+  list-style-type: none;
+text-align: left;
+}
+#slideshow{
+  box-shadow:0 8px 16px rgba(0,0,0,.3);
+  width: 100vw;
+}
+
+/*--End of Dragon Page--*/
+
+  #colophon{
+    background-color:#060E26;
+    color:#ffffff;
+  }
+  #colophon h6{
+    padding:20px;
+    margin:0;
+    text-align:center;
+    font-size:.7rem;
+    text-transform:uppercase;
+  }
+  #colophon h6 a{
+    color: #ffffff;
+    text-decoration:underline;
+  }
+  
+  /*--History Page*/
+
+  #intro2.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    align-items: center;
+  }
+  
+  h2 #history{
+    padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #060E26;
+      width: 100vw;
+      color: #ffffff;
+  }
+
+div.container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+
+div.container h3{
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    color: #ffffff;
+    width: 100%;
+    
+}
+table{
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #060E26;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-collapse:collapse;
+  width:100%;
+}
+tr:nth-child(even){
+  background-color:rgba(0,0,0,.0);
+  
+}
+
+th{
+  padding:10px;
+  color: #000000;
+  border-bottom:  1px solid #000000;
+}
+td{ border-bottom:1px solid #000000;
+  padding:5px
+}
+
+.fade{
+  margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width: 700px;
+}
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+color: black;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+  color:black;
+}
+
+
+/*--End of History page--*/
+
+
+/*--FAQ page--*/
+
+#faq-content.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+
+h2 #faq{
+  padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    width: 100vw;
+    color: #ffffff; 
+  }
+
+
+#faq-content p{
+  margin: 1rem;
+  
+  
+}
+ #faq-content p:nth-child(odd) {
+  background-color: #060E26;
+  color: #ffffff;
+  margin:10px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+ }
+ #faq-content p:nth-child(even) {
+  text-align: left;
+ }
+
+ aside{
+  width: 100%;
+  margin: 0;
+  font-style: italic;
+  color: #000000;
+  border-top: 1px solid#000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+aside header h2{
+  text-align: center;
+  text-decoration: underline;
+}
+aside ul li{
+  list-style-type: none;
+  text-align: center;
+  padding: .3rem;
+  
+}
+aside ul li a{
+  text-decoration:underline;
+  color: #000000;
+}
+
+ 
+
+ /*--Contact Page--*/
+
+#contact-content.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  align-items: center;
+}
+
+h2 #contact{
+  padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #060E26;
+    width: 100vw;
+    color: #ffffff;
+}
+#form.container{
+  width: 100vw;
+}
+
+#colophon4{ 
+  background-color:#060E26;
+  color:#ffffff;
+  clear: both;
+}
+#colophon4 h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  font-size:.7rem;
+  text-transform:uppercase;
+}
+
+#colophon4 h6 a{
+  color: #ffffff;
+  text-decoration:underline;
+}
+
+ /*------------- Media Queries---------------*/
+
+ @media screen and (max-width:700px){
+
+  header.primary nav ul{
+    flex-direction:column;
+  }
+
+  header.primary ul li a{
+  display:block;  
+  }
+
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+ }
